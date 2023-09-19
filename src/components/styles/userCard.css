@@ -1,0 +1,152 @@
+.card_conteiner {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0003;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transition: transform 200ms ease;
+}
+.card_conteiner_close {
+    transform: scale(0);
+}
+.delete_card {
+    position: relative;
+    width: 100%;
+    max-width: 15em;
+    padding: 1em;
+    border-radius: 0.7em;
+    background-color: white;
+}
+.delete_card h3 {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.delete_card div {
+    position: absolute;
+    top: 1.2em;
+    right: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete_card div:hover {
+    color: blue;
+}
+.delete_btn {
+    width: 100%;
+    padding: 0.5em;
+    background-color:  rgb(22, 110, 218);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.delete_btn:hover {
+    filter: brightness(1.2);
+}
+
+.title {
+    display: inline-block;
+    margin: 20px;
+    color: rgb(22, 110, 218);
+
+}
+.formUser__btn__principal {
+    position: absolute;
+    top: 2.5em;
+    right: 1.5em;
+    width: 12em;
+    font-size: 0.8rem;
+    background-color: rgb(22, 110, 218);
+    color: white;
+    border-radius: 0.5em;
+    margin: 0;
+    box-sizing: border-box;
+}
+.formUser__btn__principal:hover {
+    filter: brightness(1.2);
+}
+.userCard {
+    position: relative;
+    border: 0.2em #0003 solid;
+    border-radius: 0.3em;
+    margin: 0 auto;
+    width: 300px;
+    padding: 0.5em;
+    color: rgb(20, 9, 122);
+    margin-bottom: 1.4em;
+}
+.userCard:hover{
+    transform: scale(1.1);
+    box-shadow: 0.7em 0.7em 0.7em 0 grey;
+}
+.userCard__text {
+    margin-bottom: 0.2em;
+    font-size: 1.2rem;
+}
+.userCard__text:hover {
+    filter: brightness(1.2);
+}
+.userCard__list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    margin-bottom: 0.7em;
+    padding-bottom: 0.7em;
+    border-bottom: 0.1em grey solid;
+    font-size: 0.9rem; 
+}
+.userCard__items {
+    color: gray;
+}
+.second-text-card {  
+    font-weight: bold;
+}
+.userCard__id {
+    margin-bottom: 0.5em;
+}
+.userCard__id:hover {
+    color: #000;
+}
+.userCard__btn__edit {
+    position: absolute;
+    right: 1.5em;
+    bottom: 0.9em;
+    width: 2.2em;
+    aspect-ratio: 1;
+    background-image: url("/edit.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: gray;
+    border-radius: 0.2em;
+}
+.userCard__btn__delete {
+    position: absolute;
+    right: 4.5em;
+    bottom: 0.9em;
+    width: 2.2em;
+    aspect-ratio: 1;
+    background-image: url("/public/delete.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: gray;
+    border-radius: 0.2em;
+}
+.card__conteiner {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    row-gap: 5px;
+    margin: 0 auto;
+}
