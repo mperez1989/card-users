@@ -44,20 +44,20 @@ const FormUser = ({ createUser, infoUpdate, updateUsers, setinfoUpdate, closeFor
       <h2 className="formUser__title">{infoUpdate ? "Update" : "New User"}</h2>
       <div onClick={handleClose} className="formUser__close">x</div>
       <div className="formUser__group">
-        <label className="formUser__label"  htmlFor="email">Email</label>
-        <input className="formUser__input" {...register("email")} type="email" id="email" placeholder="Email" />
-      </div>
-      <div className="formUser__group">
-        <label className="formUser__label" htmlFor="password">Password</label>
-        <input className="formUser__input" {...register("password")} type="password" id="password" placeholder="Password" />
-      </div>
-      <div className="formUser__group">
         <label className="formUser__label" htmlFor="first_name">First name</label>
         <input className="formUser__input" {...register("first_name")} type="text" id="first_name" placeholder="First Name" />
       </div>
       <div className="formUser__group">
         <label className="formUser__label" htmlFor="last_name">Last name</label>
         <input className="formUser__input" {...register("last_name")}  type="text" id="last_name"  placeholder="Last Name"/>
+      </div>
+      <div className="formUser__group">
+        <label className="formUser__label"  htmlFor="email">Email</label>
+        <input className="formUser__input" {...register("email")} type="email" id="email" placeholder="Email" />
+      </div>
+      <div className="formUser__group">
+        <label className="formUser__label" htmlFor="password">Password</label>
+        <input className="formUser__input" {...register("password")} type="password" id="password" placeholder="Password" />
       </div>
       <div className="formUser__group">
         <label className="formUser__label" htmlFor="birthday">Birthday</label>
